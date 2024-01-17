@@ -1,5 +1,5 @@
 let students = {
-    "class-one" : [
+    "class-one": [
         {
             "id": 1,
             "name": "Debora Richard",
@@ -61,7 +61,7 @@ let students = {
             "parcentage": 80
         }
     ],
-    "class-two" : [
+    "class-two": [
         {
             "id": 1,
             "name": "Allison Jarvis",
@@ -123,7 +123,7 @@ let students = {
             "parcentage": 98
         }
     ],
-    "class-three" : [
+    "class-three": [
         {
             "id": 1,
             "name": "Rachelle Salazar",

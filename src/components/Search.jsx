@@ -1,4 +1,8 @@
-export default function Search () {
+import {useState} from "react";
+
+export default function Search ({searching}) {
+    let [searchData, setSearchData] = useState("");
+
     return (
         <>
             <div className="mb-16 flex flex-col items-center">
@@ -15,6 +19,10 @@ export default function Search () {
                                 id="search-dropdown"
                                 className="z-20 block w-full bg-white px-4 py-2.5 pr-10 focus:outline-none rounded-[63px] placeholder:text-neutral-400 text-neutral-800"
                                 placeholder="Search by Student "
+                                onKeyDown={(e) => {
+                                    setSearchData(e.target.value);
+                                    searching(searchData);
+                                }}
                                 required
                             />
                             <button
