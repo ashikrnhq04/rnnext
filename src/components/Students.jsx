@@ -1,5 +1,5 @@
 import avatar from "./../assets/avatar.png";
-import {Fragment, useState} from "react";
+import {Fragment} from "react";
 
 
 
