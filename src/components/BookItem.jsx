@@ -1,7 +1,7 @@
 import {FaHeart, FaRegHeart} from "react-icons/fa";
 import Book from "./../assets/book.png";
 import Star from "./../assets/star.svg"
-export default function BookItem({booksList}) {
+export default function BookItem({booksList, handlefevourite}) {
     let renderBooks = [];
 
 
@@ -49,7 +49,7 @@ export default function BookItem({booksList}) {
 
                             Add to Cart
                         </button>
-                        <button
+                        <button onClick={() => handlefevourite(book.id)}
                             className={`flex min-w-[132px] items-center justify-center gap-1 rounded-md ${ book.isFavourite ? "bg-[#DC2954]/[14%]" : "bg-[#1C4336]/[14%]"} py-1.5 ${book.isFavourite ? "text-[#DC2954]" : "text-[#1C4336]"} transition-all ${book.isFavourite ?  "hover:bg-[#DC2954]/[24%]" : "hover:bg-[#1C4336]/[24%]"} lg:py-1.5`}
                         >
                             {book.isFavourite ? <FaHeart /> : <FaRegHeart/>}

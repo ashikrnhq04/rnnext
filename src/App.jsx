@@ -13,6 +13,17 @@ function App() {
     let [bookList, setBookList] = useState(books ?? []);
     const year = new Date().getFullYear();
 
+    function handleFavourite(id) {
+        setBookList(bookList => {
+            return [...bookList].map(item => {
+                if(item.id === id) {
+                    return {...item, isFavourite: !item.isFavourite}
+                }
+                return item;
+            })
+        })
+    }
+
     function handleSort(data) {
 
         setBookList((bookList) => {
@@ -59,7 +70,7 @@ function App() {
             </Header>
 
             <PageContainer>
-                <BookItem booksList={bookList}  />
+                <BookItem handlefevourite={handleFavourite} booksList={bookList}  />
             </PageContainer>
         </main>
         <Footer>
