@@ -1,0 +1,75 @@
+let books = [
+    {
+        id: 1,
+        title: "JavaScript and Jquery",
+        author: "Jon Duckett",
+        publication_year: 2011,
+        price: "$63",
+        isFavourite: false,
+    },{
+        id: 2,
+        title: "Agile Web Development with Rails",
+        author: "Sam Ruby",
+        publication_year: 2010,
+        price: "$52",
+        isFavourite: false,
+    },{
+        id: 3,
+        title: "Flask Web Development",
+        author: "Miguel Grinberg",
+        publication_year: 2008,
+        price: "$43",
+        isFavourite: false,
+    },{
+        id: 4,
+        title: "Agile web development with rails",
+        author: "Dave Thomas",
+        publication_year: 2005,
+        price: "$89",
+        isFavourite: false,
+    },{
+        id: 5,
+        title: "CakePHP Application Development",
+        author: "Ahsanul Bari",
+        publication_year: 2008,
+        price: "$72",
+        isFavourite: true,
+    },{
+        id: 6,
+        title: "Alex Homer, ASP.NET 2.0",
+        author: "David Sussman",
+        publication_year: 2006,
+        price: "$58",
+        isFavourite: false,
+    },{
+        id: 7,
+        title: "PHP Oracle Web Development",
+        author: "Yuli Vasiliev",
+        publication_year: 2007,
+        price: "$33",
+        isFavourite: true,
+    },{
+        id: 8,
+        title: "WordPress for Web Developers",
+        author: "Stephanie Leary",
+        publication_year: 2013,
+        price: "$71",
+        isFavourite: false,
+    },{
+        id: 9,
+        title: "MODx Web Development",
+        author: "Antano Solar John",
+        publication_year: 2009,
+        price: "$22",
+        isFavourite: true,
+    },{
+        id: 10,
+        title: "Grok 1.0 Web Development",
+        author: "Carlos de la Guardia",
+        publication_year: 2001,
+        price: "$69",
+        isFavourite: false,
+    },
+]
+
+export default books;
