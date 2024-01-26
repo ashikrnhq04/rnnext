@@ -1,11 +1,11 @@
 import {useContext, useState} from "react";
-import {tasksDispatch, tasksStatus} from "../context/index.jsx";
+import {tasksDispatch, tasksFormStatus} from "../context/index.jsx";
 import {toast} from "react-toastify";
 
 
 
 export default function CreateTaskModal({settasktoupdate, tasktoupdate, children}) {
-    const {formMode, setFormMode} = useContext(tasksStatus);
+    const {formMode, setFormMode} = useContext(tasksFormStatus);
     const dispatch = useContext(tasksDispatch);
     let [formData, setFormData] = useState(  tasktoupdate || {
         id: null,

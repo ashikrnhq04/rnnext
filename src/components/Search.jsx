@@ -1,9 +1,9 @@
 import {useContext, useState} from "react";
-import {tasksDispatch, tasksStatus} from "../context/index.jsx";
+import {tasksDispatch, tasksFormStatus} from "../context/index.jsx";
 
 export default function Search() {
 
-    let {setFormMode} = useContext(tasksStatus);
+    let {setFormMode} = useContext(tasksFormStatus);
     let [searchTerm, setSearchTerm] = useState("");
     let dispatch = useContext(tasksDispatch);
 

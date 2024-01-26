@@ -11,12 +11,12 @@ import Footer from "../components/Footer.jsx";
 import {useContext, useState} from "react";
 import {sortTaskData} from "../utilities/utilities.js";
 import Task from "../components/Task.jsx";
-import {tasksContext, tasksStatus} from "../context/index.jsx";
+import {tasksContext, tasksFormStatus} from "../context/index.jsx";
 
 
 export default function Page() {
     let taskData = useContext(tasksContext);
-    let {formMode, setFormMode} = useContext(tasksStatus);
+    let {formMode, setFormMode} = useContext(tasksFormStatus);
     let year = new Date().getFullYear();
     let [taskToUpdate, setTaskToUpdate] = useState(null);
 

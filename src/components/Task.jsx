@@ -2,13 +2,13 @@ import color from "../color.js";
 import {FaRegStar, FaStar} from "react-icons/fa";
 import Button from "./Button.jsx";
 import {useContext} from "react";
-import {tasksDispatch, tasksStatus} from "../context/index.jsx";
+import {tasksDispatch, tasksFormStatus} from "../context/index.jsx";
 import {toast} from "react-toastify";
 
 export default function Task({task, handleedit}) {
     let dispatch = useContext(tasksDispatch);
     let {id, title, description, tags, priority, isFavourite} = task;
-    let {formMode, setFormMode} = useContext(tasksStatus);
+    let {formMode, setFormMode} = useContext(tasksFormStatus);
     let renderTags = tags?.map((tag, index) => {
         let colorIndex = index + 1  === tags.length ? Math.floor(Math.random() * (color.length - 1)) : index;
         return (

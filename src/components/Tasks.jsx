@@ -1,6 +1,6 @@
 import Search from "./Search.jsx";
 import TasksActionHead from "./TasksActionHead.jsx";
-import {tasksContext, tasksDispatch, tasksStatus} from "../context/index.jsx";
+import {tasksContext, tasksDispatch, tasksFormStatus} from "../context/index.jsx";
 import {useContext} from "react";
 import Button from "./Button.jsx";
 import {toast} from "react-toastify";
@@ -10,7 +10,7 @@ import TaskBoard from "./TaskBoard.jsx";
 export default function Tasks({children}) {
     const dispatch = useContext(tasksDispatch);
     const tasksData = useContext(tasksContext);
-    let {setFormMode} = useContext(tasksStatus);
+    let {setFormMode} = useContext(tasksFormStatus);
 
 
     function showToastDeleteAll() {

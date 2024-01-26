@@ -5,7 +5,7 @@ import taskList from "../data.js";
 
 export const tasksContext = createContext([]);
 export const tasksDispatch = createContext();
-export const tasksStatus = createContext();
+export const tasksFormStatus = createContext();
 
 export default function TaskElementProvider({children}) {
     let [tasksList, dispatch] = useImmerReducer( taskReducers, taskList || []);
@@ -13,9 +13,9 @@ export default function TaskElementProvider({children}) {
     return (
         <tasksContext.Provider value={tasksList}>
             <tasksDispatch.Provider value={dispatch}>
-                <tasksStatus.Provider value={{formMode, setFormMode}}>
+                <tasksFormStatus.Provider value={{formMode, setFormMode}}>
                     {children}
-                </tasksStatus.Provider>
+                </tasksFormStatus.Provider>
             </tasksDispatch.Provider>
         </tasksContext.Provider>
     )
