@@ -4,7 +4,7 @@ let data = [
         title: "Integration API",
         description: "Connect an existing API to a third-party database using secure methods and handle data exchange efficiently.",
         tags : ['Web', 'Python', 'API', "TS"],
-        priority: "High",
+        priority: "high",
         isFavourite: false
     },
     {
@@ -12,7 +12,7 @@ let data = [
         title: "Challan Form",
         description: "Handle data exchange efficiently.",
         tags : ['Invoice', 'JavaScript', 'API', "React"],
-        priority: "Medium",
+        priority: "medium",
         isFavourite: true
     },
     {
@@ -28,7 +28,7 @@ let data = [
         title: "Login Form",
         description: "Build login form and connect to the database. Make sure to authenticate first.",
         tags : ['AI', "React", "TS", "PHP"],
-        priority: "High",
+        priority: "high",
         isFavourite: true
     }
 ];

@@ -13,7 +13,7 @@ export default function Task({task, handleedit}) {
         let colorIndex = index + 1  === tags.length ? Math.floor(Math.random() * (color.length - 1)) : index;
         return (
             <li key={tag}>
-                <span className={`inline-block h-5 whitespace-nowrap rounded-[45px] ${color[colorIndex]}  px-2.5 text-sm capitalize text-[#F4F5F6]`}>{tag}
+                <span className={`inline-block h-5 whitespace-nowrap rounded-[45px] ${color[colorIndex]}  px-2.5 text-sm text-[#F4F5F6]`}>{tag.toLowerCase()}
                     </span>
             </li>
         );
@@ -67,7 +67,7 @@ export default function Task({task, handleedit}) {
                         {renderTags}
                     </ul>
                 </td>
-                <td className="text-center">{priority}</td>
+                <td className="text-center capitalize">{priority}</td>
                 <td>
                     <div className="flex items-center justify-center space-x-3">
                         <Button clickEvent={() => handleDelete(id)} link skin={"red"}>Delete</Button>
